@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title>Sharing Nearby Spots</title>
+    <!-- 引入样式 -->
+    <link rel="icon" href="./../imgs/favicon.ico">
+    <link rel="stylesheet" href="./css/element.css">
+    <link href="./css/jump-page.css" rel="stylesheet">
+
+
+    <style type="text/css">
+        .el-input__inner {
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <div class="jumpPage">
+        <div class="contain">
+            <div class="pic" ><img src="/imgs/qrcode_jumpPage.png" alt=""></div>
+            <div class="word1">
+                <span>This is a client-side website.</span>
+            </div>
+            <br>
+            <div class="word2">
+                <span>Please scan QRcode by phone <br> or <br> type following link on phone</span>
+                <br>
+<!--                <div class="fotterRightTextOne" @click="jump" style="text-decoration: underline ;color: rgb(57,167,176);">http://43.206.181.204:8080/index.html</div>-->
+                <div class="link"> http://43.206.181.204:8080/index.html </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="./js/vue.js"></script>
+<script src="./js/axios.min.js"></script>
+<!-- 引入组件库 -->
+<script src="./js/element.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/footer.js"></script>
+<!--<script src="./js/jump.js"></script>-->
+<script>
+    export default {
+        el: "#app",
+        data() {
+            return {
+                msg1: 'This is a client-side website.',
+                msg2: 'Please scan QRcode by phone <br> or <br> tab following link on phone',
+            }
+        },
+        methods: {
+            jump() {
+                location.href = "http://43.206.181.204:8080/index.html"
+            }
+
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+.jumpPage{
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    background-image: url("./../imgs/backgroundPic.png");
+    background-size: contain;
+
+}
+.contain{
+    width: 30em;
+    height: 32em;
+    position: relative;
+    font-size: 12px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #f8fbfc;
+    border-radius: 20px;
+    box-shadow: 0 0 3px #a4ab93,
+    0 0 6px #111010;
+}
+.pic{
+    display: flex;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    width: 20em;
+    height: 20em;
+    background-image: url("./../imgs/qrcode_jumpPage.png");
+    background-size: contain;
+}
+
+.word1{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(57,167,176);
+}
+.word2{
+    font-size: 1.5em;
+    text-align: center;
+    color: rgb(57,167,176);
+}
+.link
+{
+    text-decoration: underline;
+    color: rgb(57,167,176);
+}

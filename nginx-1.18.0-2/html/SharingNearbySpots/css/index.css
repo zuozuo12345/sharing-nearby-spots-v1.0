@@ -1,0 +1,171 @@
+/*搜索框*/
+.search-box{
+    background-color: #a8ded6;
+    /*color: white;*/
+    display: flex;
+    /*justify-content: space-around;*/
+    height: 6%;
+    align-items: center;
+    padding: 0 0px;
+}
+.blog-shop {
+    background-color: #a8ded6;
+    color: #080809;
+    font-family: Hiragino Sans GB,Arial,Helvetica,"\5B8B\4F53",sans-serif;
+    font-size: 12px;
+    padding: 17px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mask {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 299;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.3);
+}
+.shop-dialog {
+    position: absolute;
+    z-index: 999;
+    bottom: 0;
+    height: 55%;
+    width: 100%;
+    background-color: #fff;
+}
+.search-bar {
+    display: flex;
+    padding: 15px 40px;
+    line-height: 40px;
+    justify-content: space-between;
+}
+/*.city-select {*/
+/*    font-weight: bold;*/
+/*    font-size: 14px;*/
+/*    margin-right: 10px;*/
+/*}*/
+.search-input {
+    width: 50%;
+    flex-grow: 1;
+    background-color: #f1f1f1;
+    line-height: 100px;
+    align-items: center;
+    border-radius: 20px;
+    display: flex;
+    padding: 0 10px ;
+}
+.search-input input {
+    margin-left: 10px;
+    border: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+input:focus,textarea:focus {
+    outline: none;
+}
+.search-button
+{
+    margin-left: 20px;
+
+}
+.shop-list {
+    padding: 15px;
+    overflow-y: scroll;
+    height: 100%;
+}
+.shop-item {
+    border-bottom: 1px solid #eae8e8;
+    padding: 8px 0;
+}
+.shop-name {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.header-icon{
+    /*width: 2%;*/
+    font-size: 14px;
+}
+.search-input{
+    width: 70%;
+}
+.type-list {
+    height: 25%;
+    display: flex;
+    margin-top: 8px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+.type-box{
+    width: 20%;
+    text-align: center;
+}
+.type-box img {
+    width: 45%;
+}
+.type-text{
+    color: #111;
+    font-size: 12px;
+    font-weight:bold;
+    font-family: Hiragino Sans GB,Arial,Helvetica,"\5B8B\4F53",sans-serif;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+/*达人探店列表*/
+.blog-list {
+    background-color: #eee;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 60%;
+    overflow-y: auto;
+}
+.blog-box{
+    width: 48%;
+    background-color: #fff;
+    margin: 5px 0;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+.blog-img img{
+    width: 100%;
+    border-radius: 3px;
+}
+.blog-title {
+    padding: 2px 10px;
+    height: 36px;
+    width: 92%;
+    overflow: hidden;
+}
+.blog-foot {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 5px 0;
+    padding: 0 10px;
+}
+.blog-user-icon {
+    width: 10%;
+    margin-right: 3px;
+}
+.blog-user-name {
+    width: 65%;
+    overflow: hidden;
+}
+.blog-user-icon img{
+    width: 100%;
+}
+.blog-liked {
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+}
+.blog-liked img{
+    width: 30%;
+    height: 75%;
+    margin-right: 2px;
+}
